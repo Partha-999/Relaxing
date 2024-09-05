@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - The Relief Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('Doc1.jpg');
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #4a4a4a;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        p {
+            color: #666666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px;
+            background: linear-gradient(135deg, #f46b45, #eea849);
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #eea849, #f46b45);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Oyeee, Ammu</h1>
+        <p>Nee mood eppudu baagundali. Baagokapothey nenu unna kada, daa set chestha, I always love you soo much.</p>
+        <p>Denitho start cheddam cheppu:</p>
+        <div class="button-group">
+            <button onclick="navigateTo('anxiety')">Tension oddu manaki</button>
+            <button onclick="navigateTo('headache')">headache enduke neeku</button>
+            <button onclick="navigateTo('period_pain_relief')">Period pain aapeddam</button>
+            <button onclick="navigateTo('binaural_beats')">Prashantam kosam</button>
+            <button onclick="navigateTo('manam')">Mana prapancham</button>
+            <button onclick="navigateTo('nenu_unna')">Nenu unna kada</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to navigate to the selected category page
+        function navigateTo(category) {
+            window.location.href = category + ".html";
+        }
+    </script>
+
+</body>
+</html>
